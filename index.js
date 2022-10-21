@@ -1,6 +1,6 @@
 require('dotenv').config();
-const { ExtendedClient } = require('discord.js');
 
+const { ExtendedClient } = require('discord.js');
 const bot = new ExtendedClient();
 
 try {
