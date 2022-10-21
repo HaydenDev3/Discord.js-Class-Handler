@@ -1,4 +1,8 @@
 const { Client, Collection } = require('discord.js');
+const { glob } = require("glob");
+const { promisify } = require("util");
+
+const globPromise = promisify(glob);
 
 module.exports = class ExtendedClient {
     constructor() {
