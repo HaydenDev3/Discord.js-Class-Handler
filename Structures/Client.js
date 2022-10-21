@@ -46,6 +46,6 @@ module.exports = class ExtendedClient {
     };
 
     async start () {
-        await this.bot.login( TOKEN ).then(() => console.log(`Logged in.`));
+        await this.bot.login( process.env.BOT_TOKEN ).then(() => console.log(`Logged in.`));
     };
 };
